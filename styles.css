@@ -248,11 +248,20 @@ main {
     padding: 50px 30px;
 }
 
+/* for 3d rotate  */
+
+.rotate:hover {
+    transform: rotateY(360deg) rotateX(18deg) rotatez(2deg);
+    box-shadow: 0 4px 8px 0 lightgray, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
 .skill {
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 45px 35px 55px 35px;
     text-align: center;
+    transition: 4s;
 }
 
 .skill-img {
@@ -313,3 +322,14 @@ footer {
     margin-left: 230px;
     margin-right: 230px;
 }
+
+
+
+/*----------------------
+   responsive for mobile 
+  ------------------------ */
+
+
+  @media only screen and (max-width: 576px) {
+    
+  }
