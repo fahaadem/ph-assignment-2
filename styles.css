@@ -15,6 +15,7 @@
 header {
     background-color: rgba(255, 144, 14, 0.1);
     margin-bottom: 70px;
+    padding-top: 35px;
 }
 
 .heading {
@@ -22,11 +23,11 @@ header {
     font-weight: 700;
     font-size: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 
 nav {
-    padding: 25px 200px 40px 200px;
     display: flex;
     justify-content: space-between;
 }
@@ -48,18 +49,21 @@ ul {
 }
 
 .heading-title {
-    padding: 100px 200px 15px 200px;
+
     color: #131313;
     font-weight: 600;
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .heading-description {
-    padding: 5px 300px 28px 300px;
+
     color: #727272;
     font-weight: 300;
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .btn-primary {
@@ -85,9 +89,6 @@ ul {
  main section style 
 --------------------- */
 
-main {
-    padding: 50px 230px;
-}
 
 
 /*----------------------
@@ -99,24 +100,19 @@ main {
     display: flex;
     align-items: center;
     gap: 60px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 }
 
 .images {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 }
 
-.images img {
-    width: 250px;
-    height: 250px;
-}
 
 .img-title {
     font-size: 45px;
     line-height: 53px;
-    padding-bottom: 20px;
+    padding-bottom: 8px;
 }
 
 #first-title {
@@ -164,7 +160,7 @@ main {
     font-weight: 300;
     font-size: 15px;
     color: #727272;
-    margin-bottom: 15px;
+    
 }
 
 .feature {
@@ -172,7 +168,7 @@ main {
     padding: 12px 15px 10px 15px;
     box-shadow: 0 1px 2px 0 lightgray, 0 2px 6px 0 lightgray;
     border: none;
-    border-radius: 8px;;
+    border-radius: 8px;
 }
 
 .feature-text {
@@ -194,12 +190,6 @@ main {
     align-items: center;
 }
 
-.img-btn {
-    position: relative;
-    right: 52px;
-    top: -92px;
-    margin-bottom: 30px;
-}
 
 .btn-experience span {
     font-weight: 650;
@@ -251,11 +241,11 @@ main {
 /* for 3d rotate  */
 
 .rotate:hover {
-    transform: rotateY(360deg) rotateX(18deg) ;
+    transform: rotateY(360deg) rotateX(18deg);
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border: none;
-    
+
 }
 
 .skill {
@@ -316,13 +306,9 @@ footer {
     font-size: 18px;
     color: #424242;
     background-color: #FFF4E7;
-    padding: 30px 245px;
-    text-align: center;
+
     border-radius: 8px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    margin-left: 230px;
-    margin-right: 230px;
+
 }
 
 
@@ -332,6 +318,147 @@ footer {
   ------------------------ */
 
 
-  @media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
+
+    nav,
+    ul,
+    .img-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        align-items: center;
+    }
+
+    .heading-info {
+        margin-top: 50px;
+    }
+
+    .btn-primary {
+        margin-top: 10px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-description {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        padding: 10px;
+    }
     
-  }
+    .images img {
+        width: 100%;
+    }
+
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin: 0px 10px;
+    }
+
+    .experience-img img {
+        margin: 0px 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-btn {
+        position: relative;
+        top: -60px;
+        left: 80px;
+    }
+
+    .features-heading {
+        padding-left: 10px;
+        margin-left: 18px;
+    }
+
+    .features-description {
+        padding: 18px;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+    .skills-description {
+        margin: 0px 15px;
+    }
+
+    .all-skills {
+        flex-direction: column;
+    }
+
+    .skill {
+        margin-bottom: 20px;
+    }
+
+    .all-sponsor {
+        flex-direction: column;
+    }
+
+    .all-sponsor img {
+        padding: 20px;
+        width: 100%;
+        height: 50%;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+}
+
+
+/* ---------------------
+   responsive for laptop 
+------------------------- */
+
+@media only screen and (min-width: 577px) {
+    nav {
+        padding-left: 200px;
+        padding-right: 180px;
+    }
+
+    .heading-description {
+        padding: 5px 300px;
+    }
+
+    main {
+        padding: 0px 230px;
+    }
+
+    .images img {
+        width: 250px;
+        height: 250px;
+    }
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-btn {
+        position: relative;
+        right: 52px;
+        top: -92px;
+    }
+
+    .experience-container {
+        margin-top: 100px;
+    }
+
+    footer {
+        padding: 30px 245px;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-left: 230px;
+        margin-right: 230px;
+    }
+
+}
