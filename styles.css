@@ -184,11 +184,6 @@ ul {
     color: #727272;
 }
 
-.experience-img img {
-    width: 550px;
-    height: 730px;
-    align-items: center;
-}
 
 
 .btn-experience span {
@@ -363,9 +358,9 @@ footer {
     }
 
     .experience-img img {
-        margin: 0px 10px;
         width: 100%;
         height: 100%;
+        padding: 0px 10px;
     }
 
     .img-btn {
@@ -388,7 +383,7 @@ footer {
     }
 
     .skills-description {
-        margin: 0px 15px;
+        padding: 0px 15px;
     }
 
     .all-skills {
@@ -426,6 +421,10 @@ footer {
         padding-right: 180px;
     }
 
+    .heading-info {
+        padding-top: 30px;
+    }
+
     .heading-description {
         padding: 5px 300px;
     }
@@ -438,8 +437,15 @@ footer {
         width: 250px;
         height: 250px;
     }
+
     .images {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-img img {
+        width: 550px;
+        height: 730px;
+        align-items: center;
     }
 
     .img-btn {
