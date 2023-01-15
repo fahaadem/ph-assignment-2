@@ -26,7 +26,6 @@ header {
     margin-bottom: 20px;
 }
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -90,11 +89,9 @@ ul {
 --------------------- */
 
 
-
 /*----------------------
   image section styles
   ---------------------- */
-
 
 .img-container {
     display: flex;
@@ -107,7 +104,6 @@ ul {
     display: grid;
     grid-gap: 10px;
 }
-
 
 .img-title {
     font-size: 45px;
@@ -184,8 +180,6 @@ ul {
     color: #727272;
 }
 
-
-
 .btn-experience span {
     font-weight: 650;
     font-size: 50px;
@@ -201,8 +195,6 @@ ul {
     border-radius: 8px;
     text-align: center;
 }
-
-
 
 /*----------------
   skills styles
@@ -240,7 +232,6 @@ ul {
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     border: none;
-
 }
 
 .skill {
@@ -291,7 +282,6 @@ ul {
 }
 
 
-
 /*----------------
   footer styles
   ----------------- */
@@ -307,11 +297,9 @@ footer {
 }
 
 
-
 /*----------------------
    responsive for mobile 
   ------------------------ */
-
 
 @media only screen and (max-width: 576px) {
 
