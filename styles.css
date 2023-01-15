@@ -8,9 +8,9 @@
     font-family: 'Work Sans';
 }
 
-/*--------------------
-  header section  
-  --------------------*/
+/*----------------------
+  header section styles
+  ----------------------*/
 
 header {
     background-color: rgba(255, 144, 14, 0.1);
@@ -77,20 +77,29 @@ ul {
     align-items: center;
     width: 1200px;
     height: 600px;
-    padding:40px 20px;
-    
+    padding: 40px 20px;
+
 }
 
 /*-------------------
  main section style 
 --------------------- */
 
-.container {
-    display:flex;
+main {
+    padding: 50px 230px;
+}
+
+
+/*----------------------
+  image section styles
+  ---------------------- */
+
+
+.img-container {
+    display: flex;
     align-items: center;
     gap: 60px;
-    padding:20px 250px;
-   
+    margin-bottom: 120px;
 }
 
 .images {
@@ -99,11 +108,206 @@ ul {
     grid-gap: 10px;
 }
 
-.image-title{
-    
-}
-
 .images img {
     width: 250px;
     height: 250px;
+}
+
+.img-title {
+    font-size: 45px;
+    line-height: 53px;
+    padding-bottom: 20px;
+}
+
+#first-title {
+    color: #727272;
+    font-weight: 400;
+}
+
+#second-title {
+    color: #131313;
+    font-weight: 600;
+}
+
+#third-title {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.img-description {
+    padding-bottom: 30px;
+    font-weight: 350;
+    font-size: 16px;
+    color: #727272;
+}
+
+
+/*--------------------------
+   experience section styles
+ --------------------------- */
+
+.experience-container {
+    display: flex;
+    gap: 70px;
+}
+
+.features-heading {
+    color: #131313;
+    font-weight: 650px;
+    font-size: 43px;
+    padding-bottom: 20px;
+}
+
+.features-description {
+    font-weight: 300;
+    font-size: 15px;
+    color: #727272;
+    padding-bottom: 15px;
+}
+
+.feature {
+    margin-top: 14px;
+    padding: 12px 15px 10px 15px;
+    box-shadow: 0 1px 2px 0 lightgray, 0 2px 6px 0 lightgray;
+    border: none;
+    border-radius: 8px;;
+}
+
+.feature-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #131313;
+}
+
+.feature-description {
+    padding-top: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #727272;
+}
+
+.experience-img img {
+    width: 550px;
+    height: 788px;
+    align-items: center;
+}
+
+.img-btn {
+    position: relative;
+    right: 45px;
+    top: -100px;
+    margin-bottom: 30px;
+}
+
+.btn-experience span {
+    font-weight: 650;
+    font-size: 50px;
+}
+
+.btn-experience {
+    padding: 28px 23px;
+    color: #FFFFFF;
+    font-weight: 550;
+    font-size: 18px;
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+/*----------------
+  skills styles
+  ----------------- */
+
+.skills {
+    margin-bottom: 50px;
+}
+
+
+.skills-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #131313;
+    padding-bottom: 20px;
+}
+
+.skills-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    padding-bottom: 20px;
+}
+
+.all-skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+}
+
+.skill {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 45px 35px 55px 35px;
+    text-align: center;
+}
+
+.skill-img {
+    width: 45.22px;
+    height: 45.22px;
+}
+
+.skill-number {
+    font-weight: 600;
+    font-size: 40px;
+    color: #424242;
+}
+
+/*--------------------
+   sponsors styles
+  -------------------- */
+
+.sponsors {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sponsors-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #131313;
+    padding-bottom: 10px;
+}
+
+.sponsors-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    padding-bottom: 50px;
+}
+
+.all-sponsor {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*----------------
+  footer styles
+  ----------------- */
+
+footer {
+    font-weight: 380;
+    font-size: 18px;
+    color: #424242;
+    background-color: #FFF4E7;
+    padding: 30px 245px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 200px;
+    margin-top: 20px;
+    margin-left: 230px;
+    margin-right: 230px;
 }
